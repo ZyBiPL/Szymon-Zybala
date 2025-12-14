@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Szymon Zybała">
+    <title>Ankieta - 7 Cudów Świata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Siedem Cudów Świata</h1>
+    </header>
+
+    <nav>
+        <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="piramidy.html">Piramida Cheopsa</a></li>
+        <li><a href="ogrody.html">Wiszące Ogrody Semiramidy</a></li>
+        <li><a href="zeus.html">Posąg Zeusa w Olimpii</a></li>
+        <li><a href="artemida.html">Świątynia Artemidy w Efezie</a></li>
+        <li><a href="mauzoleum.html">Mauzoleum w Halikarnasie</a></li>
+        <li><a href="kolos.html">Kolos Rodyjski</a></li>
+        <li><a href="latarnia.html">Latarnia morska na Faros</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Weź udział w naszej ankiecie!</h2>
+            <p>Pomóż nam poznać Twoją opinię na temat cudów świata.</p>
+            
+            <form action="#" method="POST" class="contact-form">
+                
+                <fieldset>
+                    <legend>Dane kontaktowe</legend>
+                    <label for="name">Imię i Nazwisko:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Adres E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Jaki jest Twój ulubiony cud?</legend>
+                    <p>Wybierz tylko jeden:</p>
+                    
+                    <input type="radio" id="piramidy" name="ulubiony_cud" value="Piramidy" required>
+                    <label for="piramidy">Piramida Cheopsa</label><br>
+                    
+                    <input type="radio" id="artemida" name="ulubiony_cud" value="Artemida">
+                    <label for="artemida">Świątynia Artemidy</label><br>
+                    
+                    <input type="radio" id="kolos" name="ulubiony_cud" value="Kolos">
+                    <label for="kolos">Kolos Rodyjski</label><br>
+                    
+                    <input type="radio" id="inny" name="ulubiony_cud" value="Inny">
+                    <label for="inny">Żaden z nich</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ocena strony</legend>
+                    <label for="ocena">Jak oceniasz prezentację treści?</label>
+                    <select id="ocena" name="ocena_strony" required>
+                        <option value="">-- Wybierz ocenę --</option>
+                        <option value="5">5 - Świetna</option>
+                        <option value="4">4 - Dobra</option>
+                        <option value="3">3 - Przeciętna</option>
+                        <option value="2">2 - Do poprawy</option>
+                    </select>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Wyślij Formularz</button>
+                    <button type="reset">Wyczyść Formularz</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor strony: <strong>Szymon Zybała</strong>, Klasa: 2TA</p>
+    </footer>
+
+</body>
+</html>
